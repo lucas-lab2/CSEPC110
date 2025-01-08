@@ -1,18 +1,19 @@
-fname = input("What it your first name? ")
-lname = input("What it your last name? ")
-email_address = input("What it your email address? ")
+print("Please, enter the following information:\n")
+fname = input("First name: ")
+lname = input("Last name: ")
+email_address = input("Email address: ")
 
 while True:
-    phone_number = input("What is your phone number? ")
+    phone_number = input("Phone number: ")
 
-    if phone_number.isdigit() and len(phone_number) == 11:
-        job_title = input("What is your job title? ")
+    if phone_number.isdigit():
+        job_title = input("Job title: ")
         break
     else:
         print("Invalid phone number, please insert your phone number again.\n")
 
 while True:
-    ID_number = input("What is your ID Number? ")
+    ID_number = input("ID Number: ")
 
     if ID_number.isdigit():
         break  # Sai do loop se for válido
@@ -21,4 +22,12 @@ while True:
 
 print("\nThe ID Card is:\n")
 print("----------------------------------------")
+print(f"{lname.upper()}, {fname.capitalize()}")
+print(f"{job_title.title()}")
+print(f"ID: {ID_number}\n\n")
+print(f"{email_address.lower()}")
+print(f"{phone_number}")
+print("----------------------------------------\n")
+
+
 

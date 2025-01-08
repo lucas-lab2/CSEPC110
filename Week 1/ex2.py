@@ -9,4 +9,4 @@ name1 = name1.capitalize()
 name2 = input("What is your last name? ")
 name2 = name2.capitalize()
 
-print(f"Your name is {name2}, {name1} {name2}")
+print(f"Your name is {name2}, {name1} {name2}.")

@@ -5,3 +5,7 @@ print(email.lower())
 
 #It won't change the value of the input
 print(email)
+
+#change permantely the variable to a lowercase state
+email = email.lower()
+print(email)

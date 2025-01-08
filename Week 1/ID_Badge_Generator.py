@@ -20,14 +20,26 @@ while True:
     else:
         print("Invalid ID Number, please insert your ID Number again.\n")
 
+hair =input("Hair color: ")
+eyes = input("Eyes color: ")
+month = input("Month: ")
+training = input("Training (Yes/No): ")
+
 print("\nThe ID Card is:")
 print("----------------------------------------")
 print(f"{lname.upper()}, {fname.capitalize()}")
 print(f"{job_title.title()}")
-print(f"ID: {ID_number}\n\n")
+print(f"ID: {ID_number}\n")
 print(f"{email_address.lower()}")
-print(f"{phone_number}")
+print(f"{phone_number}\n")
+
+column_width = 10
+print(f"Hair: {hair:<{column_width}} Eyer: {eyes}")
+print(f"Month: {month:<{column_width}} Training: {training}")
 print("----------------------------------------\n")
 
 
 
+
+
+ 

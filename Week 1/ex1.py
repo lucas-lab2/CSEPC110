@@ -1,3 +1,7 @@
+""""
+Author: Lucas Miranda
+Purpose: Display text to the screen
+"""
 #initalize 'stop' as 1 to start the loop
 stop = 1
 cont = 0 

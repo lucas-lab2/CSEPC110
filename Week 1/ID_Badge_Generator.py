@@ -20,7 +20,7 @@ while True:
     else:
         print("Invalid ID Number, please insert your ID Number again.\n")
 
-print("\nThe ID Card is:\n")
+print("\nThe ID Card is:")
 print("----------------------------------------")
 print(f"{lname.upper()}, {fname.capitalize()}")
 print(f"{job_title.title()}")

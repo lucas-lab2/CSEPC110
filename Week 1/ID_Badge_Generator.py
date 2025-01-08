@@ -1,7 +1,5 @@
 # Prompt the user to enter their information
 print("Please, enter the following information:\n")
-
-# Collect the first name, last name, and email address
 fname = input("First name: ")
 lname = input("Last name: ")
 email_address = input("Email address: ")
@@ -39,23 +37,16 @@ training = input("Training (Yes/No): ")
 # Print the formatted ID card
 print("\nThe ID Card is:")
 print("----------------------------------------")
-
-# Print the last name in uppercase and first name in capitalized format
 print(f"{lname.upper()}, {fname.capitalize()}")
-# Print the job title in title case
 print(f"{job_title.title()}")
-# Print the ID number
 print(f"ID: {ID_number}\n")
-# Print the email address in lowercase
 print(f"{email_address.lower()}")
-# Print the phone number
 print(f"{phone_number}\n")
 
 # Define a column width for formatting the output
 column_width = 10
 
-# Print hair and eyes information, with the defined column width for spacing
+# Print the information with the defined column width for spacing
 print(f"Hair: {hair:<{column_width}} Eyer: {eyes}")
-# Print month and training information, with the defined column width for spacing
 print(f"Month: {month:<{column_width}} Training: {training}")
 print("----------------------------------------\n")

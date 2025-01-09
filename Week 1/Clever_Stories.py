@@ -25,6 +25,23 @@ while True:
         print("Please enter 3 adjectives: ")
         adjectives = [input("Enter an adjective: ") for _ in range(3)]
 
-        print("Please enter 3 adjectives: ")
-        adjectives = [input("Enter an adjective: ") for _ in range(3)]
+        print("\nPlease enter 3 animals: ")
+        animal = [input("Enter an animal: ") for _ in range(3)]
+        
+        print("\nPlease enter 5 verbs: ")
+        verb = [input("Enter a verb: ") for _ in range(5)]
     
+        print("\nPlease enter 3 explanations: ")
+        explanation = [input("Enter an exclanation: ") for _ in range(3)]
+        
+        adjectives1 = random.choice(adjectives)
+        animal1 = random.choice(animal)
+        verb1 = random.choice(verb)
+        explanation1 = random.choice(explanation)
+        
+        print("Your Story is:\n")
+        print(f"""The other day, I was really in trouble. It all started when I saw a very
+        {adjective.lower()} {animal.lower()} {verb.lower()} down the hallway. \"{exclamation.capitalize()}!\" I yelled. But all
+        I could think to do was to {verb2.lower()} over and over. Miraculously,
+        that caused it to stop, but not before it tried to {verb3.lower()}
+        right in front of my family.""")

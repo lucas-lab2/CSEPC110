@@ -1,6 +1,6 @@
 import random
 
-print("Please enter the following: ")
+print("Please enter the following: \n")
 
 adjective = input("Adjective: ")
 animal = input("Animal: ")
@@ -15,10 +15,11 @@ print(f"""The other day, I was really in trouble. It all started when I saw a ve
 I could think to do was to {verb2.lower()} over and over. Miraculously,
 that caused it to stop, but not before it tried to {verb3.lower()}
 right in front of my family.""")
+stop = input("\nDo you want to make it funnier?: Yes - 1 No- 0: ")
+stop2 = int(stop)
 
 while True:
-    stop = input("\nDo you want to make ir funnier?: Yes - 1 No- 0: ")
-    stop2 = int(stop)
+    
     if stop2 == 0:
         break
     else:
@@ -31,17 +32,20 @@ while True:
         print("\nPlease enter 5 verbs: ")
         verb = [input("Enter a verb: ") for _ in range(5)]
     
-        print("\nPlease enter 3 explanations: ")
+        print("\nPlease enter 3 explanations: \n")
         explanation = [input("Enter an exclanation: ") for _ in range(3)]
         
         adjectives1 = random.choice(adjectives)
         animal1 = random.choice(animal)
         verb1 = random.choice(verb)
+        verb2 = random.choice(verb)
+        verb3 = random.choice(verb)
         explanation1 = random.choice(explanation)
         
         print("Your Story is:\n")
         print(f"""The other day, I was really in trouble. It all started when I saw a very
-        {adjective.lower()} {animal.lower()} {verb.lower()} down the hallway. \"{exclamation.capitalize()}!\" I yelled. But all
-        I could think to do was to {verb2.lower()} over and over. Miraculously,
-        that caused it to stop, but not before it tried to {verb3.lower()}
-        right in front of my family.""")
+{adjectives1.lower()} {animal1.lower()} {verb1.lower()} down the hallway. \"{explanation1.capitalize()}!\" I yelled. But all
+I could think to do was to {verb2.lower()} over and over. Miraculously,
+that caused it to stop, but not before it tried to {verb3.lower()}
+right in front of my family.""")
+        break

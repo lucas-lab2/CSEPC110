@@ -28,6 +28,11 @@ while True:
     valume_cube = value ** 3
     volume_sphere = (4/3) * (math.pi * (value ** 3))
     
+    print(f"Area of a square: {area_square: 1.f}")
+    print(f"Area of a circle: {area_circle: 1.f}")
+    print(f"Volume of a cube: {valume_cube: 1.f}")
+    print(f"Volume of a sphere: {volume_sphere: 1.f}")
+    
     
     
     while True:

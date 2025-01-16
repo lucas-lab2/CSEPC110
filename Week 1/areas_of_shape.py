@@ -25,18 +25,27 @@ while True:
     # Square calculus
     area_square = value ** 2
     area_circle = math.pi * (value ** 2)
-    valume_cube = value ** 3
+    volume_cube = value ** 3
     volume_sphere = (4/3) * (math.pi * (value ** 3))
     
     print(f"Area of a square: {area_square: .1f}")
     print(f"Area of a circle: {area_circle: .1f}")
-    print(f"Volume of a cube: {valume_cube: .1f}")
+    print(f"Volume of a cube: {volume_cube: .1f}")
     print(f"Volume of a sphere: {volume_sphere: .1f}")
     
-    value2 = float(input("What is the value in centimenters to be used: "))
+    length2 = float(input("What is the value in centimeters to be used to calculate the are of the square: "))
+    area_square2 = length2 ** 2
+    print(f"Area of a square is {area_square2: .2f} cmˆ2 or {area_square2/(10000): .3f} mˆ2")
     
+    radius2 = float(input("What is the value in centimeters for radius to be used to calculate the area of the circle: "))
+    area_circle2 = math.pi * (radius2 ** 2)
+    print(f"Area of a circle is {area_circle2: .2f} cmˆ2 or {area_circle2/(10000): .3f} mˆ2")
+   
+    length3 = float(input("What is the length in centimeters to be used to calculate the are of the rectangle: "))
+    width3 = float(input("What is the width in centimeters to be used to calculate the are of the rectangle: "))
     
-    
+    area_rectangle2 =  length3 * width3
+    print(f"Area of a rectangle is {area_rectangle2: .2f} cmˆ2 or {area_rectangle2/(10000): .3f} mˆ2")
     
     while True:
         cont = int(input("Do you want to continue? 1 - Yes 0 - No: "))

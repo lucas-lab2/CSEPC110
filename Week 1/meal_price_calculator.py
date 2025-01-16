@@ -6,6 +6,15 @@ Purpose: Meal price calculator
 import math
 
 while True:
+    child_meal = float(input("What is the price of a child's meal? "))
+    child_drink = float(input("What is the price of a child's drink? "))
+    child_number = int(input("How many children are there? "))
+    
+    adult_meal = float(input("\nWhat is the price of an adult's meal? "))
+    adult_drink = float(input("What is the price of a adult's drink? "))
+    adult_number = int(input("How many adults are there? "))
+    
+    subtotal = ((child_drink + child_meal) * child_number) + ((adult_drink + adult_meal) * adult_number)
     
     
     while True:

@@ -17,6 +17,15 @@ while True:
             print("Please, choose a valid option!")
         else:
             break
+   
+   
+    while True:
+        cont = int(input("Do you want to try another scenario? 1 - Yes 0 - No: "))
+        if cont in [1, 0]:
+            break  # leave loop
+        print("Invalid input. Please enter 1 or 0.")
+        
+    if cont == 0:
+        break
     
-  
     

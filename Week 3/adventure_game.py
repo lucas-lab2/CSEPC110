@@ -9,20 +9,14 @@ while True:
     line = textwrap.fill(text, width = 50)
     print(line)
     
-    choices = input("North\nEast\nWest\n")
-    choices1 = choices.lower()
-    choices2 = choices1 != "north" or choices1 != "east" or choices1 != "west"
-    
-    if choices2:
-        print("Please, choose a valid option! ")
-    
-    
     while True:
-        cont = int(input("Do you want to try a different scenario? 1 - Yes 0 - No: "))
-        if cont == 1 or cont == 0:
-            break  # leave loop
-        print("Invalid input. Please enter 1 or 0.")
-        
-    if cont == 0:
-        break
+        choices = input("North\nEast\nWest\n")
+        choices1 = choices.lower()
+    
+        if choices1 not in ["north", "east", "west"]:
+            print("Please, choose a valid option!")
+        else:
+            break
+    
+  
     

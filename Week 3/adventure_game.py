@@ -103,14 +103,14 @@ while True:
         print("The mission fails, and the sacred records remain hidden. The Spirit withdraws, and the prophet mourns the lost opportunity.")
         break
         
-    text7 = "You continue your journey but face a spiritual trial. As you grow weary, you feel doubts creeping into your heart. A voice whispers, 'Turn back now.' What will you do?"
-    line7 = textwrap.fill(text7, width=50)
-    print(line7)
+    text6 = "After much hardship, you arrive at the base of the sacred hill where the plates are hidden. A powerful guard challenges your worthiness to enter. How will you proceed?"
+    line6 = textwrap.fill(text6, width=50)
+    print(line6)
     while True:
-        choices_level_2 = input("PRAY\nIGNORE\nRETURN\n")
-        choices_lv_2 =   choices_level_2.upper()
+        choices_level_3 = input("FAST\nTESTIFY\nFIGHT\n")
+        choices_lv_3 =   choices_level_3.upper()
 
-        if choices_lv_2 not in ["PRAY", "IGNORE", "RETURN"]:
+        if choices_lv_3 not in ["FAST", "TESTIFY", "FIGHT"]:
             print("Please, choose a valid option!")
         else:
             break

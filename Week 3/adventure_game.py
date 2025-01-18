@@ -2,6 +2,7 @@
 Author: Lucas Miranda
 Purpose: Adventure game
 """
+#Showing creativity: added loops, entry validation, reward counting added, use of lists
 import textwrap
 
 # Initialize the reward counters

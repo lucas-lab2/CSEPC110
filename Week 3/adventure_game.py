@@ -3,7 +3,8 @@ Author: Lucas Miranda
 Purpose: Adventure game
 """
 import textwrap
-#level 1
+
+# level 1
 while True:
     text = "You are a faithful follower of the prophet Nephi, tasked with retrieving sacred records hidden deep within the wilderness. The journey will test your faith, courage, and wisdom. As you stand at the edge of the camp, you face three paths leading into the wilderness. Which path will you take?"
     line = textwrap.fill(text, width=50)
@@ -81,7 +82,8 @@ while True:
             print("You testify of the true God. One traveler is moved by your faith and decides to guide you, ensuring safe passage.\n")
         elif west_choices1 == "AGREE":
             print("You gain their help but feel the Spirit withdraw. The journey becomes harder as doubt clouds your heart.\n")   
-    #level 2
+
+    # level 2
     text5 = "You continue your journey but face a spiritual trial. As you grow weary, you feel doubts creeping into your heart. A voice whispers, 'Turn back now.' What will you do?"
     line5 = textwrap.fill(text5, width=50)
     print(line5)
@@ -115,24 +117,44 @@ while True:
         else:
             break
         
-    if choices_lv_2 == "PRAY":
-            print("You kneel in humility, and the Spirit fills you with strength. The doubts vanish, and you see the sacred hill in the distance.\n")
-    elif choices_lv_2 == "IGNORE":
-            print("You push forward, but the doubts linger. Your steps grow heavier, and the journey takes longer.\n")
-    elif choices_lv_2 == "RETURN":
-        print("You turn back, abandoning the mission. The sacred records remain hidden, and the prophet mourns the lost opportunity.")   
-        print("The mission fails, and the sacred records remain hidden. The Spirit withdraws, and the prophet mourns the lost opportunity.")
+    if choices_lv_3 == "FAST":
+            print("You fast and pray, and a divine light surrounds you. The guard bows in respect, allowing you to retrieve the plates.\n")
+    elif choices_lv_3 == "TESTIFY":
+            print("You bear witness of your faith, and the guard moves aside, recognizing your worthiness.\n")
+    elif choices_lv_3 == "FIGHT":
+        print("You try to force your way past the guard, but divine power repels you. You are sent back, unable to complete the mission.")   
         break
     
+    # level 3 - final decision
+    text7 = "You have obtained the sacred records. As you stand on the hilltop, you are presented with a choice: Will you return to your people with the records, or will you keep them for yourself?"
+    line7 = textwrap.fill(text7, width=50)
+    print(line7)
+
     while True:
-        cont = int(input("Do you want to convert another grade? 1 - Yes 0 - No: "))
+        final_choice = input("RETURN\nKEEP\n")
+        final_choice1 = final_choice.upper()
+
+        if final_choice1 not in ["RETURN", "KEEP"]:
+            print("Please, choose a valid option!")
+        else:
+            break
+
+    if final_choice1 == "RETURN":
+        print("You decide to return to your people, bringing the sacred records to them. Your journey is complete, and you have fulfilled your mission.")
+        print("You have made a righteous choice, and your faith has been rewarded.")
+    elif final_choice1 == "KEEP":
+        print("You decide to keep the sacred records for yourself. As you hold them, you feel a heavy burden on your soul. The Spirit withdraws, and you lose your way.")
+        print("Your journey ends in sorrow, as the records are lost to you.")
+    
+    # Prompt for a new adventure or to end the game
+    while True:
+        cont = int(input("Do you want to start another journey? 1 - Yes 0 - No: "))
         if cont == 1 or cont == 0:
             break  # leave loop
         print("Invalid input. Please enter 1 or 0.")
         
     if cont == 0:
         break
-    
 
     
     

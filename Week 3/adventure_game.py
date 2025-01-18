@@ -82,12 +82,48 @@ while True:
         elif west_choices1 == "AGREE":
             print("You gain their help but feel the Spirit withdraw. The journey becomes harder as doubt clouds your heart.\n")   
     #level 2
-        text = "You are a faithful follower of the prophet Nephi, tasked with retrieving sacred records hidden deep within the wilderness. The journey will test your faith, courage, and wisdom. As you stand at the edge of the camp, you face three paths leading into the wilderness. Which path will you take?"
-        line = textwrap.fill(text, width=50)
-        print(line)
-       
-        while True:
+    text5 = "You continue your journey but face a spiritual trial. As you grow weary, you feel doubts creeping into your heart. A voice whispers, 'Turn back now.' What will you do?"
+    line5 = textwrap.fill(text5, width=50)
+    print(line5)
+    while True:
+        choices_level_2 = input("PRAY\nIGNORE\nRETURN\n")
+        choices_lv_2 =   choices_level_2.upper()
 
+        if choices_lv_2 not in ["PRAY", "IGNORE", "RETURN"]:
+                print("Please, choose a valid option!")
+        else:
+            break
+        
+    if choices_lv_2 == "PRAY":
+        print("You kneel in humility, and the Spirit fills you with strength. The doubts vanish, and you see the sacred hill in the distance.\n")
+    elif choices_lv_2 == "IGNORE":
+            print("You push forward, but the doubts linger. Your steps grow heavier, and the journey takes longer.\n")
+    elif choices_lv_2 == "RETURN":
+        print("You turn back, abandoning the mission. The sacred records remain hidden, and the prophet mourns the lost opportunity.")   
+        print("The mission fails, and the sacred records remain hidden. The Spirit withdraws, and the prophet mourns the lost opportunity.")
+        break
+        
+    text7 = "You continue your journey but face a spiritual trial. As you grow weary, you feel doubts creeping into your heart. A voice whispers, 'Turn back now.' What will you do?"
+    line7 = textwrap.fill(text7, width=50)
+    print(line7)
+    while True:
+        choices_level_2 = input("PRAY\nIGNORE\nRETURN\n")
+        choices_lv_2 =   choices_level_2.upper()
+
+        if choices_lv_2 not in ["PRAY", "IGNORE", "RETURN"]:
+            print("Please, choose a valid option!")
+        else:
+            break
+        
+    if choices_lv_2 == "PRAY":
+            print("You kneel in humility, and the Spirit fills you with strength. The doubts vanish, and you see the sacred hill in the distance.\n")
+    elif choices_lv_2 == "IGNORE":
+            print("You push forward, but the doubts linger. Your steps grow heavier, and the journey takes longer.\n")
+    elif choices_lv_2 == "RETURN":
+        print("You turn back, abandoning the mission. The sacred records remain hidden, and the prophet mourns the lost opportunity.")   
+        print("The mission fails, and the sacred records remain hidden. The Spirit withdraws, and the prophet mourns the lost opportunity.")
+        break
+    
     while True:
         cont = int(input("Do you want to try another scenario? 1 - Yes 0 - No: "))
         if cont in [1, 0]:

@@ -3,7 +3,7 @@ Author: Lucas Miranda
 Purpose: Adventure game
 """
 import textwrap
-
+#level 1
 while True:
     text = "You are a faithful follower of the prophet Nephi, tasked with retrieving sacred records hidden deep within the wilderness. The journey will test your faith, courage, and wisdom. As you stand at the edge of the camp, you face three paths leading into the wilderness. Which path will you take?"
     line = textwrap.fill(text, width=50)
@@ -34,11 +34,11 @@ while True:
                 break
         
         if north_choices1 == "PRAY":
-            print("You kneel and pray for protection. A sudden light from above frightens the beasts, and you find a hidden path leading safely out of the forest.")
+            print("You kneel and pray for protection. A sudden light from above frightens the beasts, and you find a hidden path leading safely out of the forest.\n")
         elif north_choices1 == "CLIMB":
-            print("You climb a tree to escape the danger, but you drop your provisions in the process. Though safe, you are now vulnerable to hunger.")
+            print("You climb a tree to escape the danger, but you drop your provisions in the process. Though safe, you are now vulnerable to hunger.\n")
         elif north_choices1 == "RUN":
-            print("You run blindly through the forest, escaping the growls but becoming lost in the darkness. You feel isolated and unsure of your direction")   
+            print("You run blindly through the forest, escaping the growls but becoming lost in the darkness. You feel isolated and unsure of your direction.\n")   
 
     elif choices1 == "EAST":
         text3 = "You find a flowing river, but it is too deep to cross on foot. You notice three possible ways to continue your journey. How will you proceed?"
@@ -55,11 +55,11 @@ while True:
                 break
         
         if east_choices1 == "BUILD":
-            print("You gather wood and build a raft, praying for guidance. You cross safely and find yourself closer to the sacred hill.")
+            print("You gather wood and build a raft, praying for guidance. You cross safely and find yourself closer to the sacred hill.\n")
         elif east_choices1 == "SWIM":
-            print("You brave the river's current, but the waters are strong. You lose some provisions but manage to reach the other side.")
+            print("You brave the river's current, but the waters are strong. You lose some provisions but manage to reach the other side.\n")
         elif east_choices1 == "FOLLOW":
-            print("You follow the river downstream, eventually discovering a hidden path leading you further into the wilderness.")   
+            print("You follow the river downstream, eventually discovering a hidden path leading you further into the wilderness.\n")   
 
     elif choices1 == "WEST":
         text4 = "You encounter a small group of travelers who appear friendly but carry golden idols. They offer to help you in exchange for worshiping their gods. What will you do?"
@@ -76,12 +76,17 @@ while True:
                 break
         
         if west_choices1 == "REFUSE":
-            print("You remain true to your faith, rejecting their offer. You continue alone, but your resolve strengthens.")
+            print("You remain true to your faith, rejecting their offer. You continue alone, but your resolve strengthens.\n")
         elif west_choices1 == "PREACH":
-            print("You testify of the true God. One traveler is moved by your faith and decides to guide you, ensuring safe passage.")
+            print("You testify of the true God. One traveler is moved by your faith and decides to guide you, ensuring safe passage.\n")
         elif west_choices1 == "AGREE":
-            print("You gain their help but feel the Spirit withdraw. The journey becomes harder as doubt clouds your heart.")   
-            
+            print("You gain their help but feel the Spirit withdraw. The journey becomes harder as doubt clouds your heart.\n")   
+    #level 2
+        text = "You are a faithful follower of the prophet Nephi, tasked with retrieving sacred records hidden deep within the wilderness. The journey will test your faith, courage, and wisdom. As you stand at the edge of the camp, you face three paths leading into the wilderness. Which path will you take?"
+        line = textwrap.fill(text, width=50)
+        print(line)
+       
+        while True:
 
     while True:
         cont = int(input("Do you want to try another scenario? 1 - Yes 0 - No: "))

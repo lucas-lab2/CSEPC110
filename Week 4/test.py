@@ -13,4 +13,5 @@ while guess_number != magic_number:
         count += 1
     else:
         print("You guessed it right in", count, "tries")
+        
         break

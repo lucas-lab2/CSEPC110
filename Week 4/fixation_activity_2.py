@@ -1,4 +1,4 @@
-word = input("What is your favorite letter in 'Commitment'?")
+word = input("What is your favorite letter in 'Commitment'?").lower()
 
 result = ""
 """
@@ -11,8 +11,6 @@ for letter in "Commitment":
 
 for letter in "Commitment":
     if letter.lower() == word:
-        result += letter.upper()
+        print(letter.upper(), end="")
     else:
-        result += letter.lower()
-
-print(result)
+        print(letter.lower(), end="")

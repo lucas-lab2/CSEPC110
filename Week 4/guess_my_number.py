@@ -13,12 +13,15 @@ while guess_number != magic_number:
         count += 1
     else:
         print("You guessed it right in", count, "tries")
-            while True:
-        cont = int(input("Do you want try another scenario again? 1 - Yes 0 - No: "))
-        if cont == 1 or cont == 0:
-            break  # leave loop
-        print("Invalid input. Please enter 1 or 0.")
         
-    if cont == 0:
-       
-        break
+        while True:
+            cont = int(input("Do you want to play again? 1 - Yes 0 - No: "))
+            if cont == 1 or cont == 0:
+                break  # leave loop
+            print("Invalid input. Please enter 1 or 0.")
+        if cont == 1:
+            magic_number = random.randint(1, 100)
+            guess_number = 0
+        
+        if cont == 0:
+            break

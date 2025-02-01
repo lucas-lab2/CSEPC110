@@ -19,10 +19,12 @@ while chances > 0 and not won:
     else:
         hint = []
         for i in range(len(secret_word)):
-            if guess[i] in secret_word:
-                hint.append(guess[i])
+            if guess[i] == secret_word[i]:
+                hint.append(secret_word[i])  # Correct letter in the correct position
+            elif guess[i] in secret_word:
+                hint.append(guess[i].lower())  # Correct letter in the wrong position
             else:
-                hint.append('_')
+                hint.append("_")  # Letter not in the word
         print("Your hint is:", " ".join(hint))
         chances -= 1
         print(f"Chances left: {chances}")

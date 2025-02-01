@@ -2,13 +2,14 @@ import random
 
 words = ["Moroni", "Lehi", "Mormon", "Prophet", "Scripture", "Liahona", "Zarahemla", "Jaredite", "Nephite"]
 secret_word = random.choice(words).lower()
-chances = 4
+guesses = 0
 won = False
 
 print("Your hint is: " + "_ " * len(secret_word))
 
-while chances > 0 and not won:
+while not won:
     guess = input("Guess the word: ").lower()
+    guesses += 1
     
     if len(guess) != len(secret_word):
         print(f"Please enter a {len(secret_word)}-letter word.")
@@ -26,11 +27,10 @@ while chances > 0 and not won:
             else:
                 hint.append("_")  # Letter not in the word
         print("Your hint is:", " ".join(hint))
-        chances -= 1
-        print(f"Chances left: {chances}")
 
 if won:
     print("\nYou won!")
 else:
     print("\nYou lost!")
-    print(f"The word was: {secret_word}")
+print(f"The word was: {secret_word}")
+print(f"Number of guesses: {guesses}")

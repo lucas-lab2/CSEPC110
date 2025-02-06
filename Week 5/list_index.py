@@ -7,3 +7,6 @@ for i in range(len(colors)):
     color = colors[i]
     human_index = i + 1 # human index starts at 1
     print(f" {human_index} - {color}") # red, blue, green, yellow, black 
+
+#You can find out how many elements are in a list, by using the len function (which is short for length) as follows: 
+# number_of_books = len(books)

@@ -13,7 +13,7 @@ while new_client != "exit":
 """
 
 points_scored = []
-new_points = 0
+new_points = ""
 total = 0
 
 while new_points != "exit":
@@ -21,7 +21,6 @@ while new_points != "exit":
     if new_points != "exit":
         points_scored.append(new_points)
 
-    print("The points scored are: ")
     for points in points_scored:
-        total += points
-        print(f" {total}")
+        total += int(points)
+    print(f" {total}")

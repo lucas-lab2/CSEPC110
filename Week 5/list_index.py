@@ -10,3 +10,5 @@ for i in range(len(colors)):
 
 #You can find out how many elements are in a list, by using the len function (which is short for length) as follows: 
 # number_of_books = len(books)
+#the_list.pop(3) # Removes the item at index 3
+#the_list.pop() # Removes the last item

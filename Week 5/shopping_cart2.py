@@ -32,3 +32,11 @@ while True:
             print(f"'{removed_item}' has been removed from the cart.")
         else:
             print("Invalid item number.")
+    elif choice == "4":
+        total = sum(price)
+        print(f"The total price of the items in the shopping cart is {total:.2f}")
+    elif choice == "5":
+        print("Thank you for using the shopping cart program. Goodbye!")
+        break
+    else:
+        print("Invalid choice. Please try again.")

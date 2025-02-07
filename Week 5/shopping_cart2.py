@@ -20,3 +20,15 @@ while True:
         product.append(item)
         price.append(cost)
         print(f"'{item}' has been added to the cart.")
+    elif choice == "2":
+        print("The contents of the shopping cart are:")
+        for i in range(len(product)):
+            print(f"{i + 1} - {product[i]} - ${price[i]:.2f}")
+    elif choice == "3":
+        item_number = int(input("Which item would you like to remove? ")) - 1
+        if 0 <= item_number < len(product):
+            removed_item = product.pop(item_number)
+            removed_price = price.pop(item_number)
+            print(f"'{removed_item}' has been removed from the cart.")
+        else:
+            print("Invalid item number.")

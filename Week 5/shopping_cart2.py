@@ -1,6 +1,6 @@
 # Author: Lucas Miranda
 # This program simulates a shopping cart where users can add items, view the cart, remove items, and compute the total cost.
-
+# In order to show creativity, I have added the ability insert the quantity of each item in the cart.
 # Lists to store product details
 products = []
 prices = []

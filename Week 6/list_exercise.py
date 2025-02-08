@@ -24,6 +24,6 @@ for person in people:
     if age < minimum_age:
         minimum_age = age
         youngest_person = name
-print(f"The oldest person is {oldest_person} and they are {max_age} years old.")
+print(f"The oldest person is {oldest_person} and they are {max_age} years old.") 
 print(f"The youngest person is {youngest_person} and they are {minimum_age} years old.")
     

@@ -1,11 +1,11 @@
 import os
 visits = 0
-file_path = os.path.join(os.path.dirname(__file__), "traffic.csv")
+file_path = os.path.join(os.path.dirname(__file__), "traffic.csv") #creates a path to the file
 
-with open(file_path) as web_traffic:
+with open(file_path) as web_traffic: #closes the file automatically after the program runs
     for line in web_traffic:
-        line_stripped = line.strip()
-        line_split = line_stripped.split(",")
+        line_stripped = line.strip() #removes whitespaces from the beginning and end of the string
+        line_split = line_stripped.split(",") #splits the string into a list of strings
 
         date = line_split[0]
         visits = line_split[1]

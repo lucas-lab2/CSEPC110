@@ -14,7 +14,7 @@ oldest_person = ""
 minimum_age = 100 # assuming no one is older than 100
 youngest_person = ""
 for person in people:
-    name = person.split()[0]
+    name = person.split(",")[0]
     age = int(person.split()[1])    
     print(f"{name} is {age} years old.")
     if age > max_age:
